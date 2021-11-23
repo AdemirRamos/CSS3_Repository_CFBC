@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/*A linha de código abaixo ("body {}") se chama "seletor".*/
+
+body {
+    background-color: #f00;
+    /*Dentro dos seletores, temos as "propriedades".*/
+    /*":", em CSS, significa "atribuição".*/
+    /*Após os dois pontos (:), vai o "valor da propriedade".*/
+    /*Ponto e vírgula (;) é o operador para separar uma propriedade da outra (seu uso é obrigatório, a menos que haja só 1 propriedade).*/
+}
