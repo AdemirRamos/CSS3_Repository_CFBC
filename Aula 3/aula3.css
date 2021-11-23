@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+:root {
+    --cor_1: #9BB09F;
+    --cor_2: #614EA2;
+    --cor_3: #F02;
+    --cor_4: rgb(205, 74, 102); /*O outro nome dessa cor: #CD4766*/
+}
+
+p {
+    color: var(--cor_2);
+    font-size: 20pt;
+    font-weight: bold;
+    background-color: var(--cor_1);
+}
+
+#p2 {
+    color: var(--cor_1);
+    font-size: 20pt;
+    font-weight: bold;
+    background-color: var(--cor_4);
+}
+
+/*Cifragem hexadecimal: #FF0000 (vermelho); forma resumida: #F00 (vermelho).*/
+/*A forma resumida só pode ser usada quando os dois digito de um canal forem iguais.*/
+/*Outro exemplo: FF0022; forma resumida: F02.*/
