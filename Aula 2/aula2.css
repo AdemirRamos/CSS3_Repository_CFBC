@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*Entre as chaves dos seletores, temos os parâmetros.*/
+/*Se houver somente 1 parâmetro ou então no último parâmetro / elemento do seu seletor, o uso de ";" é facultativo.*/
+
+p {
+    color: #f00;
+    font-size: 20pt;
+}
+
+/*Para se referir a "ids", em CSS, usamos "#".*/
+
+#p1 {
+    color: #00f
+}
+
+/*Elementos selecionados com "id" possuem prioridade maior do que elementos selecionados por "tag".*/
+
+/*Para se referir a "class", em CSS, usamos ".".*/
+
+.txt {
+    color: #080;
+    font-size: 30pt;
+}
+
+/*Com "ids", somente o elemento que leva uma "id" receberá uma formatação.*/
+
+/*Podemos selecionar várias "tags" para aplicar a mesma formatação a todas.*/
+
+h4, h5, h6 {
+    color: yellow;
+    font-size: 15pt;
+}
