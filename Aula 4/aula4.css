@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*"background" é uma propriedade que pode ser aplicada em várias "tags" diferentes.*/
+
+body {
+    background-image: url('Imagens/css3_logo-200.png'), url('Imagens/javascript_logo-200.png'), url('Imagens/html5_logo-200.png');
+    background-size: 200px 200px;
+    /*Ao ser informado somente um valor, o valor em questão assume a proporção da iamgem.*/
+    /*O valor informado vale para a largura da imagem, no entanto, a imagem não será distorcida: altura e largura foram aumentadas.*/
+    /*Caso se deseje modificar tanto altura quanto largura, basta adicionar um segundo valor à "background-size".*/
+    /*Ao adicionar um segundo valor e, dependendo do valor, a imagem pode ser distorcida.*/
+    /*Caso somente um valor seja indicado, esse valor valerá para a largura.*/
+    /*Se pode aplicar mais de uma imagem no seu fundo.*/
+    /*Para alterar a segunda imagem, basta adicionar mais valores após os valores da primeira imagem os sepando por vírgula.*/
+
+    background-repeat: no-repeat;
+    /*"background-repeat": "repeat": repete a imagem de fundo; "no-repeat": não repete a imagem de fundo. - "repeat" é o padrão.*/
+    /*"repeat-x" faz com que a imagem se repita somente na horizontal.*/
+    /*Já "repeat-y" faz com que a imagem se repita somente na vertical.*/
+
+    background-position: left 100px, right 100px, center 100px;
+    /*Uma "background-image" não é uma imagem, mas sim um plano de fundo.*/
+    /*"background-position": o primeiro valor corresponde ao eixo horizontal e o segundo ao eixo vertical.*/
+    /*"background-position": o padrão é "left top".*/
+    /*Essas medidas também podem ser definidas com pixels (px).*/
+}
+
+p {
+    background-image: url('Imagens/html5_logo-200.png');
+    background-repeat: repeat-x;
+    background-position: 0px 8px;
+    background-color: blueviolet;
+    font-size: 30pt;
+    color: red;
+}
