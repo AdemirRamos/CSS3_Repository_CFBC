@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body {
+    background: #AAA url('Imagens/programming-200.png') no-repeat 0px 0px / 100%;
+
+    /*"background" é uma metapropriedade, por conta disso, ela pode receber vários parâmetros diferentes.*/
+    /*Apenas lembrando que a configuração da imagem também pode ser feita usando pixels (px).*/
+    /*Para indicar o tamanho da imagem de fundo, é preciso usar uma barra antes do valor.*/
+    /*E antes do valor do tamanho da imagem, é preciso se adicionar os valores da posição da imagem.*/
+    /*P. S.: A posição da imagem é definida pela propriedade "background-position".*/
+    /*Caso se deseja uma imagem de fundo responsiva, basta definir o tamanho da imagem em "100%".*/
+}
