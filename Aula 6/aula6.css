@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('Imagens/vscode_logo.png'), url('Imagens/programming-200.png');
+    background-repeat: no-repeat, repeat;
+    background-size: 400px, 200px;
+    background-attachment: scroll, fixed;
+    /*O valor fixo faz com que a imagem não se mova.*/
+    /*O valor padrão dessa propriedade é "scroll" - "scroll" faz com que a imagem não se fixe.*/
+    /*Como "scroll" é o valor padrão para "background-attachment", não é nem preciso digitá-lo (caso você não queira a imagem fixa).*/
+}
