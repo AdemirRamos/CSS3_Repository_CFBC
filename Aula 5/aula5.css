@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#d1, #d2, #d3, #p1 {
+    border: 10px dotted #000;
+    /*"border" é uma metapropriedade (ela inclui uma série de outras propriedades de formatação de borda).*/
+    /*"dotted" adiciona uma margem pontilhada. "solid" aplica uma borda continua.*/
+    
+    padding: 50px;
+    /*"padding" representa a margem interna do elemento.*/
+    /*Ao definir somente um valor para o "paddin", esse valor será aplicado para todos os lados do "padding".*/
+    /*Lados do "padding": "top", "right", "bottom" e "left".*/
+    /*Podemos colocar um valor após o outro para configurar todos os cantos da nossa "caixa" (na ordem de cantos acima).*/
+    /*O valor 0(px) não adiciona "padding" algum.*/
+
+    background-color: #0f0;
+    /*"background" também é uma metapropriedade.*/
+    /*Com "background", se pode configurar várias coisas: cor, imagem, et cetera.*/
+    /*Caso se deseje configurar somente a cor, usamos "background-color".*/
+
+    background-image: url('Imagens/programming-200.png');
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+
+#d1 {
+    background-clip: border-box; /*"border-box" é o valor padrão dessa propriedade.*/
+    /*"background-clip" configura o padrão de corte a partir do ínicio da borda.*/
+}
+
+#d2 {
+    background-clip: padding-box; /*"padding-box" desconsidera a borda e inicia o "background" após o término da borda..*/
+}
+
+#d3 {
+    background-clip: content-box; /*"content-box" define o corte do fundo a partir do conteúdo dentro da caixa.*/
+}
+
+#p1 {
+    background-clip: padding-box;
+}
