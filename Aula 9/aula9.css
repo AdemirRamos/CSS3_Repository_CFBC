@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+p {
+    width: 300px;
+    border-top: #000 solid 20px;
+    /*Os valores do parâmetro serão aplicados somente na borda superior.*/
+    /*"border-top": borda superior; "border-bottom": borda inferior; "border-right": borda direita; "border-left": borda esquerda.*/
+
+    border-bottom: #f00 dotted 20px;
+    border-right: #00f double 20px;
+    border-left: #0f0 groove 20px;
+
+    border-top-width: 20px;
+    /*O parâmetro acima altera (somente) a largura da borda superior.*/
+
+    border-right-width: 20px;
+    border-left-width: 20px;
+    border-bottom-width: 20px;
+
+    border-top-style: solid;
+    /*O parâmetro acima altera (somente) o estilo da borda superior.*/
+
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+
+    border-top-color: #000;
+    /*O parâmetro acima altera (somente) a cor da borda superior.*/
+
+    border-top-color: #f00;
+    border-top-color: #0f0;
+    border-top-color: #00f;
+}
