@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+#d1, p {
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+    
+    border-style: solid;
+    /*O parâmetro, acima, determina o tipo da borda.*/
+    /*Valores do parâmetro: "solid"; "dotted"; "dashed"; "double"; "groove"; "ridge"; "inset"; "outset"; "none"; "hidden".*/
+    /*"double": duplica a borda. / "groove": borda 3d. / "ridge": borda 3d (cores invertidas em relação ao "groove").*/
+    /*"inset": baixo-relevo. / "outset": alto-relevo. / "none": sem borda. / "hidden": borda escondida.*/
+
+    border-width: 20px;
+    /*O parâmetro, acima, determina a largura da borda.*/
+
+    border-color: #f00;
+    /*O parâmetro, acima, determina a cor da borda.*/
+}
+
+#d2 {
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+
+    /*A seguir, temos a metapropriedade "border":*/
+    border: #00f solid 20px;
+    /*Aparentemente, não há uma ordem a se seguir para esta metapropriedade.*/
+}
