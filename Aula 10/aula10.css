@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+div {
+    width: 400px;
+    height: 100px;
+    border: #000 solid 20px;
+    border-radius: 40px;
+    /*Um único valor configura os quatro quantos da borda.*/
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+#caixa_2 {
+    width: 400px;
+    height: 100px;
+    border: #000 solid 20px;
+    /*Ordem das bordas: 1ª: superior esquerda; 2ª: superior direita; 3ª: inferior direita; 4ª: inferior esquerda.*/
+    border-radius: 0px 40px 0px 40px;
+    /*Caso você utilize o valor "100%", a sua borda será arredondada em 100%.*/
+    /*Com os 100% e uma altura e largura do mesmo tamanho, se formará um círculo perfeito.*/
+    padding: 15px;
+}
