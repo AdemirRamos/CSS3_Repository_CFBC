@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+p {
+    border: 30px solid; /*Aqui o 30px representa o tamanho/espessura da borda.*/
+    border-image: url('Imagens/borda.png') 30 round; /*O 30 aqui representa o fatiamento da borda.*/
+    /*Após a imagem, temos o fatiamento da imagem. Após o fatiameno temos o comportamento da imagem.*/
+    /*"round" pode ser entendido como "arredondar" ou "volta ('loop')".*/
+    /*As bolas azuis representam as bordas da imagem. As vermelhas os cantos da imagem.*/
+}
+
+.dois {
+    border: 30px solid;
+    border-image: url('Imagens/borda.png') 30 stretch;
+    /*"stretch" estica a borda.*/
+}
