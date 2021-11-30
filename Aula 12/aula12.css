@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+p {
+    font-size: 50px;
+}
+
+div#dv1 {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 0, 0, 0.568);
+    /*O valor de alpha vai variar entre 0 e 1.*/
+    /*0 significa transparência/opacidade total. 1 significa o mínimo de transparência/opacidade.*/
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+
+div#dv2 {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 255, 0.568);
+    position: absolute;
+    top: 0px;
+    left: 520px;
+}
