@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+}
+
+div#div1 {
+    border: 1px solid black;
+    margin-top: 15px;
+    /*margin: 100px;*/
+    /*Apenas lembrando que: quando só um valor para o parâmetro "margin", esse valor valerá para as quatro margens do objeto.*/
+    
+    padding: 100px;
+    /*A mesma regra, descrita acima, vale para "padding", ou seja, um valor configura todos os cantos (internos) do conteúdo.*/
+    /*Por ser uma metapropriedade, "padding" pode receber vários valores - um para cada canto (interno) do conteúdo.*/
+    
+    /*Exemplo: "padding: 50px 0px 150px 200px". Ordem dos elementos: "top"; "right"; "bottom"; "left".*/ 
+    /*padding-top: 50px;*/
+    /*padding-right: 0px;*/
+    /*padding-bottom: 150px;*/
+    /*padding-left: 200px;*/
+
+    width: 500px;
+    text-align: center;
+}
+
+div#div2 {
+    border: 1px solid black;
+    width: 500px;
+    padding: 50px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+div#div3 {
+    border: 1px solid black;
+    width: 500px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+div {
+    margin: auto;
+}
