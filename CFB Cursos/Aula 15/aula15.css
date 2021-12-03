@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+
+#dv1 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    background-color: #f00;
+    background: linear-gradient(to right, #f00, #ff0);
+    /*Gradiente é um valor de "background".*/
+    /*O "gradiente linear" é uma gradiente ou somente na horizontal ou somente na vertical.*/
+    /*Primeiro vem o sentido do gradiente (para onde ele aponta), depois vírgula, depois as cores do gradiente (separadas por ",").*/
+    /*Na direção do gradiente, se pode usar os seguintes valores: "top", "right", "botom", "left".*/
+    /*Caso se deseja um gradiente no sentido diagonal, ao invés de "to + direção", podemos usar um ângulo. - Conferir "dv2".*/
+    /*Para que a direção do gradiente seja entendida como um ângulo, é preciso usar a abreviação "deg" (de "degree").*/
+    /*Se pode adicionar quantas cores se desejar ao seu gradiente, apenas lembre de as separar com vírgulas.*/
+    /*Após as cores, se pode adicionar onde se deseja que aquela cor comece. - Conferir "dv3".*/
+}
+
+#dv2 {
+    position: absolute;
+    top: 7px;
+    left: 350px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    background-color: #f00;
+    background: linear-gradient(45deg, rgb(75, 0, 75), rgb(154, 49, 252), rgb(128, 0, 128));
+}
+
+#dv3 {
+    position: absolute;
+    top: 7px;
+    left: 700px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    background-color: #f00;
+    background: linear-gradient(180deg, orange 0%, blue 25%, lime 100%);
+}
+
+#dv4 {
+    background: radial-gradient(rgb(146, 224, 255), rgb(255, 128, 36));
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    margin-top: 8px;
+    /*Já o "gradiente radial" é uma gradiente circular.*/
+    /*No caso desse gradiente, por ele ser circular, não se indica a sua direção.*/
+    /*Também se pode indicar que a variação de cor do centro do gradiente sempre será um círculo. - Conferir "dv5".*/
+}
+
+#dv5 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgb(95, 236, 95) 0%, rgb(185, 14, 162) 50%);
+    border: 1px solid black;
+    margin-top: 8px;
+    position: absolute;
+    left: 350px;
+    top: 310px;
+}
+
+#dv6 {
+    width: 300px;
+    height: 300px;
+    background: repeating-linear-gradient(90deg, rgb(219, 194, 113) 20%, rgb(17, 180, 145) 40%);
+    border: 1px solid black;
+    margin-top: 8px;
+    position: absolute;
+    left: 700px;
+    top: 310px;
+}
+
+#dv7 {
+    width: 300px;
+    height: 300px;
+    background: repeating-radial-gradient(circle, rgb(197, 160, 38) 20%, rgb(61, 116, 218) 40%);
+    border: 1px solid black;
+    margin-top: 8px;
+    position: absolute;
+    left: 8px;
+    top: 625px;
+}
+
+h1#parte1 {
+    position: absolute;
+    top: 625px;
+    left: 350px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.938);
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+    background: linear-gradient(90deg, rgb(96, 197, 38), rgb(17, 58, 133));
+}
+
+/*Gradiente no texto:*/
+
+h1#parte2 {
+    position: absolute;
+    top: 625px;
+    left: 730px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.938);
+    font-weight: bolder;
+    /*text-shadow: 1px 1px 1px black;*/
+    background: linear-gradient(90deg, rgb(96, 197, 38) 0%, rgb(17, 58, 133) 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /*Checar as "webkits". A primeira parece estar obsoleta.*/
+}
