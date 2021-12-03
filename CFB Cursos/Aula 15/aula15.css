@@ -108,5 +108,5 @@ h1#parte2 {
     background: linear-gradient(90deg, rgb(96, 197, 38) 0%, rgb(17, 58, 133) 75%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    /*Checar as "webkits". A primeira parece estar obsoleta.*/
+    /*Checar as "webkits". Ambas parecem estar obsoletas.*/
 }
