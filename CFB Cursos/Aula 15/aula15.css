@@ -104,7 +104,9 @@ h1#parte2 {
     color: rgba(255, 255, 255, 0.938);
     font-weight: bolder;
     background: linear-gradient(90deg, rgb(96, 197, 38) 0%, rgb(17, 58, 133) 75%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    /*-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;*/
     /*Checar as "webkits". Ambas parecem estar obsoletas.*/
+    /*As duas linhas acima (com "webkits") foram desativadas unicamente para que a mensagem de erro sumisse.*/
+    /*Caso se deseje ver um texto com gradiente, até se aprender uma nova maneira de fazê-lo, basta ativar essas duas linhas novamente.*/
 }
