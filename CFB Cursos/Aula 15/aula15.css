@@ -7,13 +7,13 @@
     background-color: #f00;
     background: linear-gradient(to right, #f00, #ff0);
     /*Gradiente é um valor de "background".*/
-    /*O "gradiente linear" é uma gradiente ou somente na horizontal ou somente na vertical.*/
+    /*O "gradiente linear" é um gradiente ou somente na horizontal ou somente na vertical.*/
     /*Primeiro vem o sentido do gradiente (para onde ele aponta), depois vírgula, depois as cores do gradiente (separadas por ",").*/
     /*Na direção do gradiente, se pode usar os seguintes valores: "top", "right", "botom", "left".*/
-    /*Caso se deseja um gradiente no sentido diagonal, ao invés de "to + direção", podemos usar um ângulo. - Conferir "dv2".*/
+    /*Caso se deseje um gradiente no sentido diagonal, ao invés de "to + direção", podemos usar um ângulo. - Conferir "dv2".*/
     /*Para que a direção do gradiente seja entendida como um ângulo, é preciso usar a abreviação "deg" (de "degree").*/
     /*Se pode adicionar quantas cores se desejar ao seu gradiente, apenas lembre de as separar com vírgulas.*/
-    /*Após as cores, se pode adicionar onde se deseja que aquela cor comece. - Conferir "dv3".*/
+    /*Após uma cor, se pode adicionar um valor marcando onde se deseja que aquela cor comece. - Conferir "dv3".*/
 }
 
 #dv2 {
@@ -103,7 +103,6 @@ h1#parte2 {
     padding: 10px;
     color: rgba(255, 255, 255, 0.938);
     font-weight: bolder;
-    /*text-shadow: 1px 1px 1px black;*/
     background: linear-gradient(90deg, rgb(96, 197, 38) 0%, rgb(17, 58, 133) 75%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
