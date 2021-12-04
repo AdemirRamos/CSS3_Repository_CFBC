@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+p#p1 {
+    color: #f00;
+    /*"color" formata a cor do texto onde é aplicada.*/
+    
+    text-align: center;
+    /*"text-align" diz respeito ao alinhamento do texto.*/
+    
+    /*valores de "text-align": "left": alinhamento à esquerda (padrão); "right": alinhamento à direita; "center": centralização do texto; "justify": justificação do texto (o texto é alinhado tanto à esquerda quanto à direita).*/
+
+    text-decoration: none;
+    
+    /*Valores de "text-decoration": "none": remove o sublinhado do texto; "underline": adiciona sublinhado ao texto; "overline": sublinhado a cima do texto; "line-through": "texto riscado".*/
+
+    text-transform: lowercase;
+    /*"transform" diz respeito a modificações do caracteres do texto.*/
+
+    /*Valores de "transform": "lowercase": deixa o texto inteiro minúsculo; "uppercase": deixa o texto inteiro maiúsculo; "capitalize": deixa somente a primeira letra de cada palavra maiúscula.*/
+
+    text-indent: 100px;
+    /*"text-indent": aumenta ou diminui a margem dos parágrafos.*/
+
+    letter-spacing: 10px;
+    /*"letter-spacing": configura o espaçamento entre as letras.*/
+
+    line-height: 2;
+    /*"line-height": configura o espaçamento entre as linhas.*/
+    /*Quando o valor de "line-height" é somente um número, isso significa que esse número representa o número de linhas de espaçamento.*/
+
+    direction: rtl;
+    /*"direction": configura a direção do texto.*/
+    /*Valores de "direction": "rtl": direita para esquerda; "ltr": esquerda para direita (padrão).*/
+
+    word-spacing: 10px;
+    /*"word-spacing": configura o espaçamento entre palavras.*/
+
+    text-align-last: justify;
+    /*"text-align-last": configura a última linha do texto.*/
+    
+    /*Essa propriedade possui a mesma lógica e valores de "text-align". A diferença é que sua aplicação se dá somente na última linha do texto.*/
+}
+
+p#p2 {
+    color: #0f0;
+    text-align: left;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 100px;
+    letter-spacing: 10px;
+    line-height: 2;
+    direction: ltr;
+    word-spacing: 10px;
+}
+
+p#p3 {
+    color: #00f;
+    text-align: right;
+    text-decoration: overline;
+    text-transform: capitalize;
+    text-indent: 100px;
+    letter-spacing: 10px;
+    line-height: 2;
+    direction: rtl;
+    word-spacing: 10px;
+}
+
+p#p4 {
+    color: #f0f;
+    text-align: justify;
+    text-decoration: line-through;
+    text-transform: lowercase;
+    text-indent: 100px;
+    letter-spacing: 10px;
+    line-height: 2;
+    direction: ltr;
+    word-spacing: 10px;
+}
+
+div#div1 {
+    width: 500px;
+    height: 100px;
+    border: 1px solid black;
+    white-space: nowrap;
+    /*"white-space": controla a quebra de linhas.*/
+    
+    /*Valores de "white-space": "nowrap": não permite que o texto seja quebrado para gerar novas linhas; "normal": quebra de linha (padrão).*/
+
+    overflow: hidden;
+    /*Basicamente, o parâmetro "overflow" controla o comportamento do conteúdo que está transbordando.*/
+    /*Valores de "overflow": "hidden": oculta o conteúdo transbordado.*/
+}
+
+div#div2 {
+    width: 400px;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 5px;
+    position: absolute;
+    top: 586px;
+    left: 520px;
+    white-space: normal;
+    overflow: scroll;
+    /*"scroll" vai permitir rolar a página dentro da "#div2" para continuar lendo o texto que lá está.*/
+    
+    /*Valores de "overflow": "auto": ao contrário de "scroll" (que sempre vai mostrar as barras de rolagem, tanto verticais quanto horizontais), "auto" mostrará as barras somente quando for necessário.*/
+
+    word-break: break-all;
+    /*"word-break": configura a quebra de palavras.*/
+    /*"valores de "word-break": "break-all": quebra linhas em caso de uma palavra muito grande; "normal": é o valor padrão.*/
+    
+    /*Quando haja uma palavra muito grande no texto e "word-break" não esteja configurado (somente "overflow" com "scroll" ou "auto"), aparecerá na tela uma barra de rolagem para que se possa ler a palavra em questão.*/
+}
+
+div#div3 {
+    width: 400px;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 5px;
+    white-space: normal;
+    overflow: auto;
+}
