@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+h1 {
+    font-size: 50pt;
+    color: black;
+    text-shadow: 5px 5px 5px #f00, -5px -5px 5px #00f, -5px 5px 5px #0f0;
+    /*Valores de "text-shadow": distância horizontal; disância vertical; blur; cor.*/
+    /*"text-shadow" é uma metapropriedade. Para configurar uma segunda sombra, basta adicionar uma vírgula e, então, os valores.*/
+    /*-webkit-text-fill-color: transparent;*/
+}
+
+h1#texto_2 {
+    font-size: 50pt;
+    color: red;
+    text-shadow: 5px 5px 5px #000, 10px 10px 5px #444, 15px 15px 5px #888, 20px 20px 5px #bbb;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: 10px 15px 5px #888;
+    padding: 5px;
+}
