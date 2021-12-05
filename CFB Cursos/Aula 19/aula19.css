@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    background-color: chartreuse;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    /*display: table-cell: transforma o seu conteúdo em uma célula de tabela.*/
+}
+
+a:link { /*Configuração geral dos "links".*/
+    text-decoration: underline;
+    color: red;
+}
+
+a:visited { /*Configuração de "links" já visitados.*/
+    color: blue;
+}
+
+a:active { /*Configuração de "links ativos" (sendo clicados).*/
+    text-decoration: underline;
+    color: green;
+}
+
+a:hover { /*Configuração de cursos sobre o "link".*/
+    color: blueviolet;
+    background-color: cornsilk;
+}
