@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+div#dv1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+
+    /*"translate" move o objeto da sua posição original para uma nova posição definida.*/
+    /*O deslocamento é definido nesta ordem: eixo X e eixo Y.*/
+    /*O item movido, permanecerá na mesma posíção do ponto de vista prático; do ponto de vista visual, o objeto mudará de posição.*/
+    /*"translate" diz respeito à translação do objeto.*/
+    transform: translate(200px, 200px);
+
+    /*Já "rotate" diz respeito à rotação do objeto.*/
+    /*Os valores de "rotate" dizem respeito ao grau de inclinação do objeto.*/
+    transform: rotate(45deg);
+
+    /*"scale" diz respeito à escala do objeto.*/
+    /*Com um valor 2 (dois), o objeto dobrará de tamanho.*/
+    /*"transform" é uma metapropriedade.*/
+    /*Caso se deseje aplicar mais de um dos parâmetros vistos até aqui, isso só poderá ser feito no mesmo parâmetro "transform".*/
+    /*Não é preciso separar os diferentes parâmetros de "transform" com vírgulas.*/
+    transform: scale(2);
+
+    /*"skew" diz respeito à inclinação do objeto.*/
+    /*Os valores de "skew" também são atribuídos em graus.*/
+    /*Todas as propriedades vistas até aqui podem, também, receber valores negativos.*/
+    /*Também há a metapropriedade "skew" - essa pode receber tanto o valor de X como o de Y.*/
+    transform: skewX(20deg) skewY(20deg);
+
+    /*O parâmetro "matrix" junta todas as transformações 2D.*/
+    /*Esta é a ordem dos valores de "matrix": "scaleX"; "skewY"; "skewX"; "scaleY"; "translateX"; "translateY".*/
+    transform: matrix(0.5, 0, 0, 0.5, 0, 0);
+
+    /*"tranform-origin": define o ponto de origem da fórmula.*/
+    /*Esse parâmetro recebe dois valores (ambos em porcentagens): o primeiro diz respeito ao X, o segundo ao Y.*/
+    /*O ponto de origem (definido por "transform-origin") vai marcar um ponto-âncora do qual o objeto nunca se desconectará.*/
+    /*Também, a partir desse ponto, serão feitas as alterações no objeto.*/
+    transform-origin: 50% 50%;
+
+    transform: translate(200px, 200px) rotate(45deg) scale(2) skewX(20deg) skewY(20deg) matrix(0.5, 0, 0, 0.5, 0, 0);
+}
