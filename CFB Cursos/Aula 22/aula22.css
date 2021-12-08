@@ -28,7 +28,7 @@
     transform-origin: 200% 200%;
 
     position: absolute;
-    top: 70px;
+    top: 10px;
     left: 170px;
 
     /*"visible" é o valor padrão da propriedade "backface-visibility"; "hidden" oculta a div inteira (quando essa for rotacionada).*/
