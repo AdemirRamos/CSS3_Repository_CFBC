@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+ul, ol {
+    /*Tipo de marcador da lista:*/
+    list-style-type: disc;
+    font-size: 25px;
+    
+    /*Imagem como marcador:*/
+    /*list-style-image: url('Imagens/seta.png');*/
+    
+    list-style-position: inside;
+    /*O marcador da lista passa para dentro do "li". O valor padrão é "outside".*/
+
+    /*"list-style" é uma metapropriedade.*/
+    list-style: decimal-leading-zero outside;
+    /*Checar.*/
+}
+
+li {
+    /*border: 1px solid black;*/
+    width: 150px;
+    height: 40px;
+    background-color: burlywood;
+    color: coral;
+    text-shadow: 1px 1px 1px black;
+    display: table-cell;
+    /*Checar.*/
+    vertical-align: middle;
+    /*Checar.*/
+    text-align: center;
+    border-right: 1px solid black;
+    /*Checar.*/
+    border: 1px solid black;
+}
+
+/*Criando um menu de "links":*/
+/*Os "links" só funcionarão se os seus respectivos textos forem clicados.*/
+
+ul {
+    list-style: none;
+    border: none;
+    padding: 0px;
+}
+
+li:hover {
+    background-color: cornflowerblue;
+}
+
+a {
+    text-decoration: none;
+    color: coral;
+    background-color: cornflowerblue;
+}
