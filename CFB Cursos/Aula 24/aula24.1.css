@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    margin-bottom: 10px;
+
+    width: 600px;
+    /*Por definição, os campos da tabela com textos maiores vão ter uma largura maior.*/
+    /*Caso se deseje modificar essa configuração, basta fazer o seguinte:*/
+    
+    table-layout: fixed;
+    /*O comando acima distribui, igualmente, o mesmo valor de largura para as colunas.*/
+
+    /*Por definição, o texto das células da tabela é centralizado à esquerda. Para modificar essa configuração, basta fazer o seguinte:*/
+    /*Ver "vertical-align" em "td, th {}".*/
+
+    border-collapse: collapse;
+    /*A propriedade acima configura o distanciamento entre as células da tabela.*/
+    /*Por padrão, a propriedade "border-collapse" já é configurada em "separate".*/
+
+    /*Com a propriedade "border-spacing", é possível controlar o tamanho do espaçamento entre as células.*/
+    /*O primeiro valor diz respeito ao espaçamento no eixo X, o segundo no eixo Y.*/
+    /*Para que "border-spacing" funcione, "border-collapse" deve receber o valor "separate".*/
+
+    border-spacing: 50px 10px;
+
+    /*Casos os valores de "border-spacing" sejam "0px, 0px" e "border-collapse" seja "separate", as bordas ficarão grossas.*/
+    /*Isso se deverá ao fato de que as bordas das células irão se sobrepor (ou duplicar), assim as engrossadando.*/
+
+    empty-cells: show;
+    /*Essa propriedade configura as células vazias.*/
+    /*Por padrão, o valor dessa propriedade é "show", ou seja, as células vazias serão mostradas.*/
+    /*Já "hidden" faz com que as células vazias não sejam mostradas.*/
+}
+
+td {
+    width: 200px;
+}
+
+td, th {
+    height: 50px;
+    vertical-align: middle;
+    /*A partir dos valores de "vertical-align", pode-se definir onde se deseja alocar os textos das células.*/
+    /*A propriedade "vertical-align" só é válida para tabelas.*/
+    text-align: center;
+}
+
+th {
+    background-color: skyblue;
+    color: coral;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*"Formatação Seca" (maneira difícil):*/
+
+.zebra {
+    background-color: #ddd;
+}
+
+/*"Formatação Seca" (maneira fácil): ver "aula24.2.html".*/
+
+div {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    /*Agora que esta "div" tem o seu "display" configurado para "talbe-cell", a propriedade "vertical-align" passa a funcionar com ela.*/
+}
