@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    float: left;
+    /*Checar.*/
+    /*display: inline-block;*/
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    color: coral;
+    text-shadow: 1px 1px 1px black;
+    font-size: 19px;
+    border: 5px solid skyblue;
+    padding: 5px;
+}
+
+#div1 {
+    border: 40px solid skyblue;
+    /*As configurações de "outline" podem ser configuradas separadamente ou através de uma metapropriedade.*/
+    margin-right: 55px;
+
+    outline-color: purple;
+    outline-style: solid; /*Os valores deste parâmetro são os mesmo de "border".*/
+    outline-width: 40px;
+}
+
+#div2 {
+    width: 400px;
+    height: 400px;
+    outline: darkslateblue solid 40px;
+    margin: 0px 20px;
+}
+
+#div3 {
+    outline-offset: 10px; /*Define o ponto no qual o contorno vai estar / começar a partir do seu objeto.*/
+    outline: firebrick solid 40px;
+}
