@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+div, span {
+    border: 1px solid black;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+/*"divs" possuem, por definição, "display block"; já "spans", por definição, possuem "display inline".*/
+/*"block": ocupa a linha inteira; "inline": ocupa somente a área do elemento-portador.*/
+/*Largura e altura alteram somente elementos "box-level"; elementos do tipo "inline" só serão afetados caso se tornem "inline-blcok.*/
+/*"inline-block": elemento "inline" com características "block".*/
+
+#d1 {
+    /*display: none;*/
+    /*Essa propriedade faz com que o seu portador não seja renderizado; é mais do que só ficar "oculto", é como se não existesse.*/
+
+    /*visibility: hidden;*/ /*Já esse parâmetro faz com que o seu portador apenas ficar "escondido".*/
+
+    display: block;
+}
+
+#d2 {
+    display: block;
+}
+
+#s1 {
+    display: inline-block;
+}
+
+#s2 {
+    display: inline-block;
+}
