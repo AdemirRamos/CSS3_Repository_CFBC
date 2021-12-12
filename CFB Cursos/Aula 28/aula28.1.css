@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+section {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    border: 1px solid black;
+    width: 100px;
+}
+
+/*Aqui é possível observar a quebra de linhas.*/

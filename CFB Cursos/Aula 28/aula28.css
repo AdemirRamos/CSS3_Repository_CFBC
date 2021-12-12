@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+section {
+    border: 3px solid #f00;
+    display: flex;
+    /*A propriedade acima torna o container (nesse caso, "section") flexível.*/
+    /*Ao fazer isso, os elementos dentro do container podem receber formatações de elementos flexíveis.*/
+    /*Ao usar essa propriedade, os elementos ficarão um ao lado do outro (nesse caso, as "divs").*/
+    /*Os navegadores mais antigos podem não estar muito bem adaptado ao "display: flex;".*/
+    /*Pensando nisso, a seguir, temos configurações para lidar com esse eventual problema:*/
+
+    display: -webkit-flex; /*Este parâmetro está voltado para o "firefox", "opera", "chrome".*/
+
+    display: -moz-flex; /*Este parâmetro está voltado para o "mozilla".*/
+
+    /*Caso a primeira configuração de "disply flex" não seja reconhecida pelo navegador do usuário, a próxima será testada "and so on".*/
+
+    /*"flex-wrap" para navegadores antigos:*/
+
+    /*-webkit-flex-wrap: wrap;*/
+    /*-moz-flex-wrap: wrap;*/
+}
+
+div {
+    border: 1px solid black;
+    flex: 1;
+    /*A propriedade acima vai tornar, também, os elementos do container flexíveis.*/
+    /*Por conta disso, os elementos se ajustarão ao tamanho do container toda vez que o tamanho do container for alterado.*/
+    /*Caso seja definida uma largura para o container, ele não mais se ajustará ao tamanho da tela.*/
+    /*Por outro lado, os elementos do container continuarão se adaptando ao tamanho do container.*/
+    /*Caso seja configurada uma "min-width" (largura mínima) para o container, ele continuará se adaptando ao tamanho da tela.*/
+    /*E só parará de fazer isso quando, por conta do tamanho da tela, ele atingir a sua largura mínima.*/
+    /*A partir desse ponto, o container não mais será flexível.*/
+    /*A "min-width" também pode ser adicionada aos elementos do container. Caso esteja somente lá, o container continuará "flex".*/
+    /*Já os seus elementos terão um ponto-limite para se manterem "flex".*/
+}
+
+section#segmento {
+    border: 3px solid #f00;
+    display: flex;
+    flex-wrap: wrap;
+    /*"nowrap" é o valor padrão dessa propriedade. Ele representa uma "não quebra de linhas".*/
+    /*Já "wrap" faz o contrário, ele quebra linhas. - Ver "aula28.1.html".*/
+    margin-top: 400px;   
+}
+
+.segmento {
+    border: 3px solid blue;
+    width: 100px;
+}
