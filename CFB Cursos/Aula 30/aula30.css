@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+section {
+    border: 3px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+div {
+    border: 1px solid black;
+    height: 50px;
+    flex: 1; /*Ajusta o "elemento-filho" de acordo com o "elemento-pai". - Checar.*/ /*"flex" é uma meta propriedade.*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+
+    /*As 3 últimas propriedade acima configuram/determinam a capacidade/comportamento do "elemento-filho" em relação ao "elemento-pai".*/
+    /*"flex-grow": capacidade de expansão / crescimento;*/
+    /*"flex-shrink": capacidade de contração / encolhimento;*/
+    /*"flex-bsis": qual espaço (vazio) irá ser ocupado pelo "elemento-filho".*/
+    /*As três propriedades acima se encontram se podem configurar na metapropriedade "flex".*/
+
+    /*"flex-grow" é o padrão de "flex". "flex-grow" == 1 == "flex-grow" == 1 e assim por diante.*/
+    /*Caso "flex-grow" seja preenchido com valor 0, o elemento não esticará; caso seja preenchido com 1, ele esticará.*/
+    /*Já "flex-shrink" segue a mesma lógica porém em relação a capacidade de encolher (ou não) do "elemento-filho".*/
+}
+
+#d1 {
+    background-color: red;
+    width: 100px;
+    order: 6;
+    /*A propriedade acima configura a ordem do "elemento-filho" dentro do container.*/
+    /*A partir da propriedade "order", podemos definir a ordem dos elementos maneira rápida e fácil.*/
+    /*Exemplo: Sexto elemento no lugar do primeiro elemeno e vice-versa. - Posteriormente, também fiz outras alterações.*/
+
+    /*Caso "flex-grow" e "flex-shrink" estejam em zero e as "divs" tenham uma largura fixa, sobrará um espaço vazio no container.*/
+    /*Para preencher esse espaço com "display flex", basta adicionar "flex: 1;" ou "flex-grow: 1;"*/
+    /*Todo elemento que receber a propriedade que consta na linha acima, irá ocupar qualquer eventual espaço vazio no container.*/
+
+    /*Como dito antes, "flex-shrink" diz respeito a capacidade de encolher que os "elementos-filhos" terão ou não.*/
+    /*Caso "flex-shrink" seja 1, eles encolherão; caso seja 0, não encolherão (à medida que a tela crescer ou diminuir).*/
+
+    /*"flex-basis" nos permite informar o quanto do espaço vazio será preenchido por um "elemento-filho".*/
+    /*O valor padrão de "flex-basis" é "auto".*/
+    /*Caso o valor de "flex-basis" seja de 100%, 100% do container será ocupado pelo seu "elemento-filho-portador".*/
+    /*Caso seja 50%, 50% do container será ocupado.*/
+
+    /*A metapropriedade "flex", em sua forma padrão, vem com os seguintes valores: "0 1 auto".*/
+}
+
+#d2 {
+    background-color: blue;
+    width: 100px;
+    order: 5;
+}
+
+#d3 {
+    background-color: green;
+    width: 100px;
+    order: 3;
+}
+
+#d4 {
+    background-color: yellow;
+    width: 100px;
+    order: 4;
+}
+
+#d5 {
+    background-color: purple;
+    width: 100px;
+    order: 2;
+}
+
+#d6 {
+    background-color: chartreuse;
+    width: 100px;
+    order: 1;
+}
