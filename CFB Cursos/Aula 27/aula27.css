@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+div {
+    margin-bottom: 5px;
+}
+
+div#div1 {
+    border: 1px solid black;
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    display: table-cell;
+    /*Faz com que o seu elemento se comporte como uma célula de uma tabela ("td").*/
+    text-align: center;
+    vertical-align: middle;
+}
+
+div#div2 {
+    border: 1px solid black;
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    line-height: 200px; /*Esta é outra possibilidade para alinhar um texto ao centro. Basta dar usar a altura do elemento-portador.*/
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 225px;
+}
+
+ol, ul, li {
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+
+ol {
+    display: table;
+    /*A propriedade acima configura o seu / a sua portador (a) como uma tabela.*/
+    /*Apenas lembrando que "table" é "inline".*/
+    width: 300px;
+}
+
+ul {
+    display: table-row;
+    /*A propriedade acima configura o seu / a sua portador (a) como uma linha de tabela.*/
+}
+
+li {
+    display: table-cell;
+    /*A propriedade acima configura o seu / a sua portador (a) como uma célula de tabela.*/
+    text-align: center;
+}
+
+.título {
+    background-color: turquoise;
+}
