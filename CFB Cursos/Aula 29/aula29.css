@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+section {
+    height: 200px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*A propriedade acima centraliza, horizontalmente, os elementos selecionados.*/
+    /*O valor "flex-start" é o valor padrão. Já "flex-end" alinha os elementos à direita. E, por fim, "center" centraliza o conteúdo.*/
+    
+    /*"webkits":*/
+
+    /*-webkit-justify-content: flex-start;*/
+    /*-moz-justify-content: flex-start;*/
+
+    align-items: center;
+    /*A propriedade acima centraliza, verticalmente, os elementos selecionados.*/
+    /*O valor "flex-start" é valor padrão. Já "flex-end" alinha os elementos em baixo. E, por fim, "center" centraliza o conteúdo.*/
+
+    /*"webkits:"*/
+
+    /*-webkit-align-items: center;*/
+    /*-moz-align-items: center;*/
+
+    flex-direction: column /*column-reverse*/;
+    /*A prorpriedade acima controla a direção / fluxo dos elementos.*/
+    /*O valor padrão é "row". Já "column" faz com que os elementos fiquem um abaixo do outro (em coluna).*/
+    /*Tanto "row" quanto "column" podem trabalhar com a opção "reverse".*/
+    /*"reverse" inverte a ordem de dos elementos e a disposição dele. Exemplo: se começavam à esquerda, agora, começam à direita.*/
+
+    /*"webkits:"*/
+
+    /*-webkit-flex-direction: column / column-reverse;*/
+    /*-moz-flex-direction: row / row-reverse;*/
+}
+
+div {
+    border: 1px solid black;
+    width: 100px;
+}
