@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* * {
+    outline: 1px solid black;
+}*/
+
+header, section, nav, footer {
+    display: flex;
+}
+
+header {
+    height: 150px;
+}
+
+nav {
+    justify-content: flex-end;
+    background-color: tomato;
+    flex-wrap: wrap;
+}
+
+nav > p {
+    width: 150px;
+    height: 50px;
+    min-width: 150px;
+    max-width: 150px;
+    /*A largura dos "links" não será alterada.*/
+    display: flex;
+    align-items: center; /*Centraliza os elementos na vertical.*/
+    justify-content: center; /*Centraliza os elementos na horizontal.*/
+}
+
+section {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section > div {
+    border: 1px solid red;
+    flex: 1;
+    margin: 5px;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 100px;
+    /*Tanto a altura quanto a largura das "divs* não serão alteradas.*/
+}
+
+footer {
+    background: #888;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
