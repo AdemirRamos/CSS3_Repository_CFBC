@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+nav {
+    background-color: tomato;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav > p {
+    width: 150px;
+}
+
+section {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+section > div {
+    border: 1px solid red;
+    width: 160px;
+    height: 160px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
