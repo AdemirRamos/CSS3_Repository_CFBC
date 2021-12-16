@@ -10,7 +10,8 @@ img {
     /*Além disso, "float" também nos permite indicar como o elemento vai flutuar.*/
 
     /*Caso "zoom" da página diminua demais, as imagens podem entrar para dentro da área onde está o "float".*/
-    /*Para se evitar isso, */
+    /*Para se evitar isso, basta usar a propriedade "clear". Recomenda-se usá-la associada a uma classe.*/
+    /*Pois, dessa maneira, ela (propriedade "clear") poderá ser usada em diferentes pontos da página.*/
 }
 
 img#imagem_1 {
