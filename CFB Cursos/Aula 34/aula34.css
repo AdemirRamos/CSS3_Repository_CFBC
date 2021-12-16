@@ -26,5 +26,5 @@ img#imagem_2 {
 }
 
 .fix {
-
+    clear: both;
 }
