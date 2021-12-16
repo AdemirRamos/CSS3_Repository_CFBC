@@ -4,4 +4,7 @@ img {
     width: 200px;
     height: 200px;
     border: 3px solid black;
+
+    /*A propriedade "float" nos permite indicar se um elemento flutuante ou não.*/
+    /*Além disso, "float" também nos permite indicar como o elemento vai flutuar.*/
 }
