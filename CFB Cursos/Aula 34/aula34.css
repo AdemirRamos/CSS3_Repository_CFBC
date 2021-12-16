@@ -8,3 +8,11 @@ img {
     /*A propriedade "float" nos permite indicar se um elemento flutuante ou não.*/
     /*Além disso, "float" também nos permite indicar como o elemento vai flutuar.*/
 }
+
+img#imagem_1 {
+    float: left;
+}
+
+img#imagem_2 {
+    float: right;
+}
