@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+div#div1 {
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    overflow: auto;
+    /*O valor padrão de "overflow" é "visible". Em "visible", o que excede o container será mostrado.*/
+    /*O valor "hidden" oculta o que exceder o container.*/
+    /*O valor "scroll" adiciona uma barra de rolagem dentro do container nos permitindo, assim, visualizar o resto do conteúdo.*/
+    /*O valor "auto" também adiciona barra de rolagem porém pode ser mais de uma a depender do comportamento do conteúdo do container.*/
+    /*"auto" pode adicionar uma barra na horizontal e outra na vertical (desde que sejam necessárias).*/
+}
+
+img#imagem_1 {
+    border: 3px solid purple;
+    width: 200px;
+    height: 200px;
+}
