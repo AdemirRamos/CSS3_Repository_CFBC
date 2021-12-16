@@ -12,6 +12,8 @@ img {
     /*Caso "zoom" da página diminua demais, as imagens podem entrar para dentro da área onde está o "float".*/
     /*Para se evitar isso, basta usar a propriedade "clear". Recomenda-se usá-la associada a uma classe.*/
     /*Pois, dessa maneira, ela (propriedade "clear") poderá ser usada em diferentes pontos da página.*/
+    /*O clear pode ser aplicado tanto à esquerda quanto à direita ou mesmo em ambos os lados.*/
+    /*Normalmente, a classe que acompanha o "clear" é chamada de "fix", mas se pode dar a essa classe o nome que se desejar.*/
 }
 
 img#imagem_1 {
@@ -21,4 +23,8 @@ img#imagem_1 {
 
 img#imagem_2 {
     float: right;
+}
+
+.fix {
+
 }
