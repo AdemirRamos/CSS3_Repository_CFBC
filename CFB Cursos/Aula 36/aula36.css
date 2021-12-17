@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+p::before, h1::before {
+    /*Pseudoelementos recebem dois dois pontos: "::".*/
+    /*Em caso de não haver nada (antes do elemento), as formatações aqui aplicadas não serão visíveis.*/
+    /*Para sanar esse problema, devemos usar a metapropriedade "content" - onde vamos definir o conteúdo que virá antes do elemento.*/
+    /*Podemos adicionar textos, imagens, entre outros.*/
+    content: "CFB Cursos - Pseudoclasses - " url('Imagens/Songs\ For\ The\ Deaf\ \(All\ Red\ -\ P\).png');
+    color: red;
+    text-decoration: underline;
+}
+
+p::after, h1:after {
+    /*"after" funciona da mesma maneira que "before", porém "after" é usado para configurar o que vier depois do elemento.*/
+    content: url('Imagens/Songs\ For\ The\ Deaf\ \(All\ Red\ -\ P\).png') " - CFB - Pseudoclasses";
+    color: red;
+    text-decoration: underline;
+}
+
+p.pseudoclasse::after, .pseudoclasse::before {
+    content: "Pseudoclasses";
+    color: black;
+}
+
+div::after, div::before {
+    content: "Pseudoclasses";
+    color: blueviolet;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+/*Caso se deseje usar "class" para aplicar o "after" e "before", se deve especificar quem vai recebê-los.*/
+/*Exemplo: "p.pseudoclasse::after"; "h1.pseudoclasse::after"; "p.pseudoclasse::before"; "h1.pseudoclasse::before"; e assim por diante.*/
+/*Bom, aparentemente, não é preciso especificar qual elemento vai receber a (s) pseudoclasse (s).*/
+/*Pelo menos, comigo, o comando funcionou de maneira genérica.*/
