@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+p {
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+
+    transition: width 1s, height 1s, background-color 1s, color 1s;
+
+    /*Na metapropriedade "transition", vamos indicar qual elemento receberá a transição e a duração (em segundos) da transição).*/
+    /*Os diferentes valores devem ser separados por vírgula.*/
+    /*A velocidade de transição, para "transition", é "ease" (começa devegar, fica mais rápida e desacelera).*/
+    /*Para alterar a velocidade de transição, usamos a propriedade "transition-timing-function":*/
+
+    transition-timing-function: linear;
+
+    /*O valor "linear" significa que, durante toda a animação, a velocidade será constante.*/
+    /*O valor "ease-in" executa o "ease" somente no começo da animação (começa devegar e termina rápido).*/
+    /*O valor "ease-out" executa o "ease" somente no final da animação (começa rápido e termina devagar).*/
+    /*O valor "ease-in-out" possui alguma diferença com o "ease" (só não foi falada qual).*/
+    /*O valor "cubic-bezier(0, 0, 0, 0)": os quatro valores representam os valores X, Y do bezier 1 e X, Y do bezier 2.*/
+    /*Ver aula 38 do curso de CSS do CFB para uma explicação detalhada do funcionamento dos valores de "cubic-bezier".*/
+    /*P. S.: A explicação começa a partir dos 9 minutos de aula.*/
+}
+
+p:hover {
+    width: 500px;
+    height: 120px;
+    background-color: rgb(189, 11, 11);
+    color: #fff;
+    font-weight: bolder;
+}
+
+/*A transição deve ir no elemento onde ela é desejada (não no evento que vai dispará-la).*/
