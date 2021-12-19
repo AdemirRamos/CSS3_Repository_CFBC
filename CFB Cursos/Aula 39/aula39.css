@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+p {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    transition: width 1s, height 1s, background-color 1s, color 1s, transform 1s;
+    transition-timing-function: linear;
+
+    /*transition-delay: 0.5s;*/
+    /*A propriedade acima gera um atraso na execução da animação.*/
+    /*O mouse precisará permanecer sobre o elemento durante o tempo determinado para "transition-delay" para que a animação comece.*/
+}
+
+p:hover {
+    width: 500px;
+    height: 120px;
+    background-color: rgb(189, 11, 11);
+    color: #fff;
+    font-weight: bolder;
+    
+    transform: rotate(360deg);
+    /*"transform" também pode ser adicionado à "transition".*/
+}
