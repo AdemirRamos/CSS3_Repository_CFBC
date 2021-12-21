@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+/*A primeira coisa que precisamos criar para se gerar animações é o conjunto de "quadro-chave" ("key-frames").*/
+/*"Key-frame", basicamente, é um quadro-chave que define as propriedades de um momento de uma animação.*/
+
+@keyframes animação {
+    /*Aqui dentro serão inseridos os quadros da animação.*/
+    /*As propriedades de "from" e "to" são separadas por ponto e vírgula (;).*/
+
+    /*Agora vamos determinar com mais precisão quando cada animação vai ocorrer:*/
+
+    0% {
+        left: 0px;
+        top: 0px;
+        background-color: burlywood;
+        color: slateblue;
+        text-shadow: 1px 1px 1px black;
+        font-weight: bolder;
+    }
+
+    25% {left: 250px;
+        top: 250px;
+        background-color: skyblue;
+        color: coral;
+        text-shadow: 1px 1px 1px black;
+        font-weight: bolder;
+    }
+
+    50% {
+        background-color: cornflowerblue;
+        color: darkorange;
+        font-size: 18px;
+        font-weight: bolder;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    100% {
+        background-color: darkred;
+        color: peru;
+        text-shadow: 1px 1px 1px black;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+}
+
+@keyframes quadrado {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 500px;
+        top: 0px;
+    }
+
+    50% {
+        left: 500px;
+        top: 500px;
+    }
+
+    75% {
+        left: 0px;
+        top: 500px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+p#p1 {
+    position: relative; /*Além de "relative", outro valor que nos permite trabalhar com "left" e "top" é o "absolute".*/
+    left: 250px;
+    top: 250px;
+    width: 400px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 18px;
+
+    /*As propriedades abaixo funcionam as propriedades de "transition" - porém aplicadas à "animation".*/
+
+    animation-name: animação
+    /*Se pode criar quantas animações se desejar. Para colocá-las aqui, basta separá-las por vírgula.*/;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 1s /*O segundo valor diz respeito a uma segunda animação (caso ela exista).*/;
+}
+
+
+p#p2 {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 400px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 18px;
+    animation-name: quadrado;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; /*Se pode definir o número de vezes que animação se repetirá (inclusive, infinitamente).*/
+    animation-play-state: paused; /*"running" é o valor padrão; "paused" pausa a animação.*/
+
+    /*Podemos usar as propriedades acima associadas ao JS.*/
+
+    animation-direction: alternate;
+    
+    /*Essa propriedade controla a direção da animação.*/
+    /*"reverse" inverte o sentido da animação.*/
+    /*"alternate" altere entre o sentido padrão e o "reverse".*/
+}
