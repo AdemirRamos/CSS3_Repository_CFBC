@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+p {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: justify;
+
+    /*Trabalhando com colunas:*/
+
+    columns: 3;
+    /*O valor de "columns" representa o número de colunas definidas.*/
+    /*A dependender do navegador, a propriedade "columns" pode não ser aceita.*/
+    /*Para solucionar esse problema, devemos recorrer à "webkits" (e "moz"):*/
+    
+    /*-webkit-columns: 2;*/
+    /*-moz-columns: 2;*/
+
+    column-gap: 50px;
+    /*A propriedade acima configura o distanciamento entre as colunas.*/
+
+    column-rule: 5px outset rgb(175, 8, 8);
+    /*A propriedade acima insere uma linha às colunas.*/
+
+    /*As duas últimas propriedades vistas (acima), podem não funcionar em navegadores antigos. "Webkits" vão resolver esse problema.*/
+}
