@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*Apesar de ambas as "divs" terem o mesmo tamanho e largura, por conta da "border" e "padding", a primeira acaba ficando maior.*/
+
+div#d1 {
+    width: 300px; /*Largura real: 370px.*/
+    height: 200px;
+    border: 10px solid black;
+    padding: 25px;
+
+    box-sizing: border-box;
+    
+    /*"content-box" é o valor padrão para "box-sizing".*/
+    /*Já, "border-box", o valor de eventuais bordas e "paddings" não é adicionado à "div*/
+}
+
+div#d2 {
+    width: 300px;
+    height: 200px;
+    border: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    background-color: red;
+}
