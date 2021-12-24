@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*Através dos "filters", é possível mudar características da imagem presente no documento HTML.*/
+
+img {
+    width: 500px;
+    height: 500px;
+
+    filter: grayscale(50%) blur(1px) brightness(150%) contrast(1.5);
+    
+    /*"grayscale" torna a imagem preta e branca. Quanto maior a porcentagem, mais preta e branca será a imagem.*/
+    /*Ao invés de porcentagem, também se pode adicionar o número 1 para se obter o mesmo resultado.*/
+    /*Também se pode adicionar qualquer valor entre 0 e 1 para definir o quanto a imagem perderá de suas cores naturais.*/
+
+    /*"blur" não trabalha com porcenagem, mas sim com px. "blur" diz respeito ao embaçamento da imagem.*/
+
+    /*"brightness" diz respeito à luminosidade da image. "brightness" também é controlado com porcentagem.*/
+    /*100% é o valor original dessa propriedade. Também podemos usar o número 1 e outros.*/
+
+    /*"contrast" diz respeito ao contraste da imagem. "contrast" também é definido com porcentagens ou números.*/
+}
