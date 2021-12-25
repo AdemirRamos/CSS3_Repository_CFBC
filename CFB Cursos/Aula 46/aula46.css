@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#img1 {
+    width: 500px;
+    height: 500px;
+
+    filter: drop-shadow(20px 20px 5px burlywood) hue-rotate(205deg) invert(1) opacity(0.80) saturate(95%) sepia(1%);
+
+    /*"drop-shadow" gera um efeito de sombra projetada.*/
+    /*propriedades de "drop-shadow": distância X; distância Y; tamanho (da sombra); cor.*/
+    /*Quanto menor for o tamanho da sombra, mais nitida ela será.*/
+    /*Caso distâcia X e Y sejam iguais a zero e o tamanho da sombra seja mantido, teremos um efeito de brilho.*/
+
+    /*"hue-rotate" diz respeito ao giro da coloração.*/
+    /*O vlaor de "hue-rotate" é definido em graus.*/
+
+    /*"invert" inverte as cores do elemento.*/
+    /*O valor 1 representa 100%.*/
+    /*"invert" pode receber qualquer valor entre 0 e 1.*/
+
+    /*"opacity" representa a opacidade aplicada ao elemento.*/
+    /*O valor 0 representa 100%.*/
+    /*"opacity" pode receber qualquer valor entre 0 e 1.*/
+    /*O valor de "opacity" também pode ser definido em %.*/
+
+    /*"saturate" controla a saturação do elemento.*/
+    /*Assim com as duas últimas propriedades, o valor aqui pode ser definido entre 0 e 1 ou em %.*/
+
+    /*"sepia" aplica o filtro sepia ao elemento. Assim como as últimas propriedades vistas, seus valores vão de 0 a 1 ou em %.*/
+}
+
+#img2 {
+    width: 500px;
+    height: 500px;
+    margin-left: 55px;
+    filter: drop-shadow(20px 20px 5px burlywood) hue-rotate(205deg);
+}
