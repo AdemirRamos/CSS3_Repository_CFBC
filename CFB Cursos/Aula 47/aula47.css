@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+img {
+    width: 500px;
+    height: 500px;
+    filter: sepia(80%) brightness(150%) saturate(80%) drop-shadow(5px 5px 5px #888) blur(1px);
+
+    /*Não é possível usar várias metapropriedades "filter", em caso de mais de uma, somente a última será aplicada ao elemento.*/
+}
