@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body {
+    background-color: skyblue;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    /*"@media" é um "boolean" que, em sendo True, aplicará uma formatação específica a elementos específicos.*/
+    /*Em "@media" temos algumas regras. A primeira delas é:*/
+    /*"type": diz respeito ao dispositivo onde a página será aberta.*/
+    /*"print" para impressoras;*/
+    /*"screen" para telas;*/
+    /*"speech" para leitores de tela;*/
+    /*"all" para qualquer dispositivo.*/
+
+    /*Após definir o dispositivo, temos uma sequência de configurações.*/
+    /*"max-width" diz respeito ao tamanho máximo da tela.*/
+
+    body {
+        background-color: #f00;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+    body {
+        background-color: blueviolet;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    body {
+        background-color: burlywood;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1250px) and (orientation: portrait) {
+    body {
+        background-color: darkslateblue;
+    }
+
+    /*"portrait" e "landscape" dizem respeito a telas de dispositivos móveis.*/
+    /*"portrait" diz respeito a uma tela em pé e "landscape" diz respeito a uma tela deitada.*/
+    /*"portrait" não funciona com a tela de um computador.*/
+}
+
+@media screen and (min-width: 1251px) and (max-width: 1300px) and (orientation: landscape) {
+    body {
+        background-color: coral;
+    }
+}
