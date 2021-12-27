@@ -24,17 +24,32 @@ img {
     body {
         background-color: #f00;
     }
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 999px) {
     body {
         background-color: blueviolet;
     }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
     body {
         background-color: burlywood;
+    }
+
+    img {
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -46,10 +61,20 @@ img {
     /*"portrait" e "landscape" dizem respeito a telas de dispositivos móveis.*/
     /*"portrait" diz respeito a uma tela em pé e "landscape" diz respeito a uma tela deitada.*/
     /*"portrait" não funciona com a tela de um computador.*/
+
+    img {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media screen and (min-width: 1251px) and (max-width: 1300px) and (orientation: landscape) {
     body {
         background-color: coral;
+    }
+
+    img {
+        width: 400px;
+        height: 400px;
     }
 }
