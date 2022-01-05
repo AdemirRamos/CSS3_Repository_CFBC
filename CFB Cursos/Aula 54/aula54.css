@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*A medidas que serão vistas nesta aula são chamadas de "medidas absolutas".*/
+/*Essa medidas não são recomendadas para páginas "web", por outro lado, são recomendadas para impressões ou trabalhos impressos.*/
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#p1 {
+    font-size: 26.666px;
+}
+
+#p2 {
+    font-size: 20pt; /*1pt + ou - == 1,3333px.*/
+}
+
+#p3 {
+    font-size: 2pc; /*1pc == 16px. PC (por extenso): "picas" - se pronuncia "paikas".*/
+}
+
+div {
+    border: 1px solid red;
+}
+
+#d1 {
+    width: 2.54cm; /*cm == centímetros.*/
+    height: 2.54cm;
+}
+
+#d2 {
+    width: 25.4mm; /*mm == milímetros.*/
+    height: 25.4mm;
+}
+
+#d3 {
+    width: 1in;
+    height: 1in; /*1in == 2,54 centímetros.*/
+}
+
+/*
+Legenda:
+
+- 1cm == 37.7952px;
+- 1mm == 3.7795px;
+- 1in == 96px;
+- 1pc == 16px;
+- 1pt == 1.3333px.
+*/
+
