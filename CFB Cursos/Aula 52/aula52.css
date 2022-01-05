@@ -1,2 +1,43 @@
 @charset "UTF-8";
 
+/*REM, assim como EM, leva em consideração o tamanho padrão da fonte.*/
+/*A diferença entre essas medidas se dá pelo: EM considera o tamanho da fonte do elemento pai e REM o do elemento raiz da página (HTML).*/
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 2em;
+}
+
+div {
+    display: inline-block;
+    width: 300px;
+}
+
+#d1 {
+    border: 1px solid red;
+    height: 1em;
+}
+
+#d2 {
+    border: 1px solid blue;
+    height: 1rem; /*Tamanho do "font-size": 20px.*/
+}
+
+/*Já a definição de tamanhos, com porcentagem, leva em consideração o espaço disponível do elemento anterior:*/
+
+#d3 {
+    border: 1px solid green;
+    display: block;
+    width: 500px;
+    height: 500px;
+}
+
+#d4 {
+    border: 1px solid yellow;
+    display: block;
+    width: 50%;
+    height: 50%;
+}
