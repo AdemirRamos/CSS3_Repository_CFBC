@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/*"Reset" básico:*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font-size: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #000;
+}
+
+body {
+    background-color: #fff;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/*"Header":*/
+
+header, section, footer {
+    display: flex;
+    justify-content: space-between;
+    /*Divide igualmente na horizontal.*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header {
+    background: #000;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px;
+}
+
+header nav {
+    display: flex;
+}
+
+.botão_menu {
+    text-decoration: none;
+    display: flex;
+    width: 120px;
+    height: 30px;
+    margin: 2px;
+    padding: 1px 5px 1px 5px;
+    background-color: #222;
+    border-radius: 10px;
+    color: #bbb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+    border: 0px;
+    text-transform: uppercase;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.botão_menu:hover {
+    background-color: #c22;
+    color: #fff;
+}
+
+.banner {
+    padding: 0px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador {
+    margin: 10px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buscador p {
+    width: 800px;
+    display: flex;
+    margin: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buscador form {
+    width: 800px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    margin: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destaque {
+    margin: auto;
+    padding: 50px;
+    background: #000;
+    border-radius: 100%;
+}
+
+.destaque:hover {
+    background: #c22;
+}
+
+footer {
+    margin-top: 10px;
+    background: #222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#car {
+    width: 50px;
+    height: 50px;
+}
+
+#phone {
+    width: 50px;
+    height: 50px;
+}
+
+#gps {
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-device-width: 450px) and (orientation: portrait) {
+    header, section, footer {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        width: 100%;
+        height: 100%;
+    }
+
+    header nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .botão_menu {
+        width: 100%;
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .banner, footer, #destaque {
+        display: none;
+    }
+
+    .buscador p, .buscador form {
+        width: 100%;
+    }
+
+    .buscador p, select, label {
+        font-size: 30px;
+    }
+}
