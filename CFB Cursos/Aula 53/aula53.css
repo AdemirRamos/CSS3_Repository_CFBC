@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    border: 5px solid black;
+}
+
+#d1 {
+    border: 1px solid red;
+    width: 50vw;
+    height: 50vh;
+}
+
+#d2 {
+    border: 1px solid blue;
+    width: 50%;
+    height: 50%;
+}
+
+/*1vw == 1% (1/100) da largura da janela; 1vh (1/100) == 1% da altura da janela.*/
+
+/*EX é semelhante a EM, porém EX se baseia no tamanho padrão da letra "X" (minúscula) para definir o tamanho de seus elementos.*/
+/*P. S.: o tamanho da fonte e estilo (família da fonte) [do elemento pai] vai influenciar a medida de EX.*/
+
+#d3 {
+    border: 1px solid purple;
+    width: 10ex;
+    height: 10ex;
+}
+
+#d4 {
+    border: 1px solid steelblue;
+    width: 10em;
+    height: 10em;
+}
+
+#d3, #d4, p {
+    display: inline-block;
+}
+
+p {
+    font-size: 5em;
+}
