@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+html {
+    font-size: 30px;
+}
+
+body {
+    font-size: 2em; /*Tamanho do "font-size": 40px.*/
+}
+
+p {
+    font-size: 16px;
+    /*"16px" é o tamanho padrão para a fonte em navegadores.*/
+}
+
+/*EM toma por referência, para definir o tamanho da fonte, o tamanho da fonte do elemento pai da página (o HTML) ou o seu elemento pai.*/
+
+p#p1 {
+    font-size: 2em;
+    color: red;
+}
+
+div {
+    display: inline-block;
+    width: 300px;
+}
+
+#d1 {
+    border: 1px solid red;
+    height: 2em;
+}
+
+#d2 {
+    border: 1px solid green;
+    height: 30px;
+}
