@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    color: #000;
+}
+
+html {
+    color: #f00;
+}
+
+body {
+    color: #0f0;
+}
+
+#d1 {
+    color: red;
+}
+
+#d2 {
+    color: magenta;
+}
+
+#d3 {
+    color: peru;
+}
+
+h1, p {
+    color: inherit;
+}
+
+/*Lembrete: "inherit" e "initial" podem ser aplicados a qualquer propriedade.*/

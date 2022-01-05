@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    color: #000;
+    /*Caso seja definida uma cor padrão (dessa maneira), essa será a cor padrão para todo o texto apresentado no documento.*/
+}
+
+
+html {
+    color: #f00; /*Sem configuração de cor para a "div", essa será a cor do texto da página.*/
+}
+
+body {
+    color: #0f0; /*Sem configuração de cor para "p" e "div", essa será a cor do texto de "p" e "div".*/
+}
+
+div {
+    color: #00f; /*Essa configuração irá se sobrepor às anteriores.*/
+}
+
+h1, p {
+    color: #ff0; /*Essa configuração irá se sobrepor às anteriores.*/
+}
+
+#título {
+    color: inherit;
+}
+
+#texto {
+    color: initial;
+}
