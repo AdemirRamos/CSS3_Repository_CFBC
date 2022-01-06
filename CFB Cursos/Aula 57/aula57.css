@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    background-color: #447;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.flexível {
+    display: flex;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+/*Distribuição padrão dos elementos através dos eixos "Main" e "Cross": 'main': da esquerda para a direita; 'cross': de cima para baixo.*/
+/*Primeiro temos a distribuição do "main axis", depois a do "cross axis".*/
+
+/*Caso um elemento receba, como "display", o valor "flex" e não tenha uma largura definida, o referido elemento ocupará a tela inteira.*/
+
+/*Caso um container receba um número de elementos maiores do que ele pode agrupar dentro de si, o seguinte irá aconteer:*/
+/*Os elementos excedentes perpassarão a área do container (de maneira continua).*/
+
+/*Caso um container seja do tipo "display: flex", todos os seus "elementos-filho" também serão "flex".*/
+
+/*Caso seja definida uma altura para o container, os "flex items" vão ser definidos nessa mesma altura.*/
+
+/*Caso o número de elementos não exceda o limite do container, é possível distribuí-los, dentro do container, de maneira livre.*/
