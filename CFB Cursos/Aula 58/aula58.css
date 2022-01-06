@@ -19,7 +19,22 @@
     display: flex;
 }
 
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #000;
 }
+
+/*Ao se usar a propriedade "flex-direction" mais o valor "column", nós invertemos a ordem de precedência dos eixos "Main" e "Cross".*/
+/*Na prática, isso significa que os elementos serão distribuídos na vertical e não na horizontal.*/
+
+/*Outros valores de "flex-direction":*/
+/*"row-reverse": faz com que os elementos sejam distribuídos na horizontal porém da direita para a esquerda.*/
+/*"column-reverse": faz com que os elementos sejam distribuídos na vertical porém de baixa para cima.*/
