@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*"flex-wrap": define a quebra de linha do container flexível.*/
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    background-color: #447;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.flexível {
+    display: flex;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.quebra {
+    flex-wrap: wrap;
+    /*"nowrap" é o valor padrão e representa uma não quebra de linha.*/
+    /*"wrap-reverse" faz com que a quebra de linhas seja invertida.*/
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
