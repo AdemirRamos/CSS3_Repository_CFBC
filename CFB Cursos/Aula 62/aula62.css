@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    background-color: #447;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    height: 30px;
+
+    /*Como fazer com que 3 elementos do container ocupem toda uma linha (do container):*/
+
+    width: calc(33.3333% - 20px);
+
+    /*"calc()" == cálculo.*/
+    /*20px: 5px "padding-left" + 5px "padding-right" + 5px "margin-left" + 5px "margin-right".*/
+}
+
+.container {
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid black;
+    /*justify-content: center; Dadas as configurações feitas, este "justify-content" não fará mais diferença.*/
+    align-items: center;
+    /*Assim como "justify-content", "align-items" será influenciado por eventuais alterações no eixo, nesse caso, no eixo cruzado.*/
+    /*Alterações essas que podem ser feita a partir do "flex-direction".*/
+    /*Também é importante ressaltar que: a depender de qual do eixo principal/cruzado, os alinhamentos vertical e horizontal mudarão.*/
+    /*"align-items" tem como valor padrão a propriedade "stretch" (que alarga os itens dentro do container a partir de sua altura).*/
+    /*Esse efeito não será aplicado caso os elementos no container tenham altura definida.*/
+    /*O valor "flex-start" alinha os itens no início do eixo secundário.*/
+    /*Esse valor fará com que os objetos deixem de ocupar todo o container na vertical.*/
+    /*O valor "flex-end" alinha os itens no final do eixo secundário.*/
+    /*Esse valor fará com que os objetos deixem de ocupar todo o container na vertical.*/
+    /*O valor "center" fará com que os itens se posicionem no centro do container (na vertical).*/
+    /*Esse valor fará com que os objetos deixem de ocupar todo o container na vertical.*/
+    /*"baseline" alinha os itens de acordo com a linha base.*/
+    /*Esse valor fará com que os objetos deixem de ocupar todo o container na vertical.*/
+    /*Caso o elemento tenha uma altura definida, o valor "stretch" deixa de funcionar.*/
+    /*P. S.: "stretch" é um valor de "align-items".*/
+}
+
+.flexível {
+    display: flex;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.quebra {
+    flex-wrap: wrap;
+}
+
+.fluxo-horizontal-com-quebra {
+    flex-flow: row wrap;
+}
+
+.fluxo-horizontal-sem-quebra {
+    flex-flow: row nowrap;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
