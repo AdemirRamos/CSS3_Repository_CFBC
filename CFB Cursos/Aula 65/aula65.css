@@ -2,6 +2,9 @@
 
 /*"order" muda a ordem dos elementos/itens dentro de um container.*/
 /*"order" também é uma propriedade "flex-item".*/
+/*Por vezes, "order" aparece aplicado através do "CSS-inline".*/
+/*Também é possível usar valores negativos com o "order".*/
+/*O menor valor corresponderá à primeira posição do container.*/
 
 .item {
     margin: 5px;
