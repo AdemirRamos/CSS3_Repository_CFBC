@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*Caso todos os "flex" itens tenham (exatamente) o mesmo conteúdo e o mesmo "flex-grow", eles ocuparam exatamente o mesmo espaço.*/
+/*Caso tenham conteúdos diferentes, o espaço ocupado no container não será uniforme.*/
+/*"flex-basis" nos ajuda a sanar esse problema.*/
+/*"auto" é o valor padrão de "flex-basis".*/
+/*Assim como "flex-grow", "flex-basis" é uma propriedade "flex-item", ou seja, vale para os itens no container, não para o container.*/
+/*"flex-basis" igual a 1 (um) faz com que todos os "flex" itens tenham o mesmo tamanho.*/
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    background-color: #447;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    height: 30px;
+}
+
+.container {
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.flexível {
+    display: flex;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.quebra {
+    flex-wrap: wrap;
+}
+
+.fluxo-horizontal-com-quebra {
+    flex-flow: row wrap;
+}
+
+.fluxo-horizontal-sem-quebra {
+    flex-flow: row nowrap;
+}
+
+.tamanho_1 {
+    flex-grow: 0;
+}
+
+.tamanho_2 {
+    flex-grow: 1;
+}
+
+.tamanho_3 {
+    flex-grow: 2;
+}
+
+.tamanho_4 {
+    flex-grow: 3;
+}
+
+.base_1 {
+    flex-basis: auto;
+}
+
+.base_2 {
+    flex-basis: 0;
+}
+
+.base_3 {
+    flex-basis: 1;
+}
+
+.base_4 {
+    flex-basis: 2;
+}
+
+.base_5 {
+    flex-basis: 3;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
