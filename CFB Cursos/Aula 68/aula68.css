@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/*"align-self" nos permite configurar um único item dentro de um grupo de elementos/itens.*/
+/*É preciso verificar o "flex-direction" para saber onde o "align-self" alinhará o item selecionado.*/
+/*"align-self" sempre será empregado no eixo secundário / eixo contrário ao eixo principal.*/
+/*"align-self" é uma propriedade "flex-item".*/
+/*Ao configurar cada um dos "flex" itens com "align-self", a propriedade "align-items" deixa de surtir efeito.*/
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    background-color: #447;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid black;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+.flexível {
+    display: flex;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.quebra {
+    flex-wrap: wrap;
+}
+
+.fluxo-horizontal-com-quebra {
+    flex-flow: row wrap;
+}
+
+.fluxo-horizontal-sem-quebra {
+    flex-flow: row nowrap;
+}
+
+.tamanho_1 {
+    flex-grow: 0;
+}
+
+.tamanho_2 {
+    flex-grow: 1;
+}
+
+.tamanho_3 {
+    flex-grow: 2;
+}
+
+.tamanho_4 {
+    flex-grow: 3;
+}
+
+.base_1 {
+    flex-basis: auto;
+}
+
+.base_2 {
+    flex-basis: 0;
+}
+
+.base_3 {
+    flex-basis: 1;
+}
+
+.base_4 {
+    flex-basis: 2;
+}
+
+.base_5 {
+    flex-basis: 3;
+}
+
+.ordem_1 {
+    order: 0;
+}
+
+.ordem_2 {
+    order: 1;
+}
+
+.ordem_3 {
+    order: 2;
+}
+
+.ordem_4 {
+    order: 3;
+}
+
+.reduzir_1 {
+    flex-shrink: 1;
+}
+
+.reduzir_2 {
+    flex-shrink: 0;
+}
+
+.reduzir_3 {
+    flex-shrink: 3;
+}
+
+.auxiliar {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.flex_1 {
+    flex: 1;
+}
+
+.flex_2 {
+    flex: 3 2 200px;
+}
+
+.início {
+    align-self: flex-start;
+}
+
+.meio {
+    align-self: center;
+}
+
+.base {
+    align-self: flex-end;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
