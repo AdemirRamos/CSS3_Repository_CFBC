@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.container {
+    display: grid;
+    /*Além de "grid", também é possível se usar "inline-grid" - uma "grid" com características "inline" e "grid".*/
+
+    grid-template-columns: auto auto;
+    /*A propriedade acima nos permite informar quantas colunas terá a nossa grade e o tamanho dessas colunas.*/
+    /*Os valores "auto" e "auto" determinam duas colunas.*/
+    /*Caso seja adicionado mais um valor "auto", teremos outra coluna.*/
+    /*Quanto mais valores "auto", mais colunas teremos na grade.*/
+    /*Também podemos definir o tamanho de cada coluna - da mesma forma que definimos o tamanho de outros elementos (px, em, rem, etc).*/
+    /*As colunas em "auto" ocuparão todo o espaço disponível da grade.*/
+
+    grid-template-rows: auto 150px 100px;
+    /*O valor padrão de "grid-template-row" é "auto".*/
+    /*Também é possível definir o tamanho das linhas.*/
+} 
+
+.item {
+    background-color: #048;
+    color: #fff;
+    border: 1px solid black;
+    text-align: center;
+}
