@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/*"flex-grow" determina a capacidade de um "flex" item aumentar ou não dentro de seu container.*/
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    background-color: #447;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    height: 30px;
+}
+
+.container {
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid black;
+    /*justify-content: center;*/
+    align-items: space-between;
+
+    /*Por padrão, os "flex" itens têm "flex-grow" igual a 0 (zero), ou seja, eles não terão seus tamanhos definidos pelo container.*/
+    /*Eles terão o tamanho original de acordo com o seu conteúdo.*/
+    /*O "flex-item" que tiver o seu "flex-grow" igual a 1 ocupará todo o espaço deixado pelos outros "flex" itens.*/
+    /*Caso todos os "flex" itens recebam "flex-grow" igual a 1, eles ocuparam todo o espaço disponível no container.*/
+    /*Caso algum dos "flex" itens recebe "flex-grow" igual a 2 (dois), esse item ocupará um pouco mais de espaço do que os outros.*/
+    /*Caso um "flex" item receba tamanho igual a 3, esse item ocupará ainda mais espaço do que os outros itens.*/
+    /*Quanto mais for o valor do "flex-grow", mais espaço o item que o recebe ocupará.*/
+    /*Ao se usar a propriedade "flex-grow", a propriedade "justify-content" perde o seu efeito.*/
+}
+
+.flexível {
+    display: flex;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.quebra {
+    flex-wrap: wrap;
+}
+
+.fluxo-horizontal-com-quebra {
+    flex-flow: row wrap;
+}
+
+.fluxo-horizontal-sem-quebra {
+    flex-flow: row nowrap;
+}
+
+.tamanho_1 {
+    flex-grow: 0;
+}
+
+.tamanho_2 {
+    flex-grow: 1;
+}
+
+.tamanho_3 {
+    flex-grow: 2;
+}
+
+.tamanho_4 {
+    flex-grow: 3;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
