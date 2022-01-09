@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.item {
+    margin: 5px;
+    padding: 5px;
+    background-color: #447;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid black;
+    justify-content: space-around;
+    /*"justify-content" alinha os itens de acordo com o eixo principal ("main axis").*/
+    /*O valor "flex-start" centraliza o conteúdo no começo do eixo principal.*/
+    /*Caso o eixo principal esteja invertido e/ou esteja distruibido como uma coluna, a posição do "flex-start/end" será diferente.*/
+    /*O valor "flex-end" alinha o conteúdo ao final do eixo principal.*/
+    /*O valor "center" centraliza (no eixo principal) o conteúdo que o recebe.*/
+    /*O valor "space-between" distruibui os elementos uniformimente no container.*/
+    /*Porém há uma ressalva a se fazer: o primeiro elemento do container será alinhado "flex-start" e o último "flex-end".*/
+    /*O valor "space-around" também distribui os elementos uniformimente no container porém sem posicionamentos "flex-start/end".*/
+    /*O espaçamento entre os itens do meio do container é o dobro do das bordas pois, ao centro, temos espaços a direita e esquerda.*/
+}
+
+.flexível {
+    display: flex;
+}
+
+.horizontal {
+    flex-direction: row-reverse;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.quebra {
+    flex-wrap: wrap;
+}
+
+.fluxo-horizontal-com-quebra {
+    flex-flow: row wrap;
+}
+
+.fluxo-horizontal-sem-quebra {
+    flex-flow: row nowrap;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
