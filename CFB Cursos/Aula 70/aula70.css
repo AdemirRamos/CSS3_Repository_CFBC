@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+
+    /*grid-column-gap: ;*/
+    /*IMPORTANTE: Essa propriedade está obsoleta. Em seu lugar, deve-se usar o "column-gap". O mesmo vale para "grip-row-gap":*/
+
+    /*grid-row-gap: ;*/
+
+    row-gap: 10px;
+
+    /*As propriedades acima, servem para definir o distanciamento entre colunas e linhas.*/
+
+    /*grid-gap: ;*/
+    /*A propriedade acima também está obsoleta. Em seu lugar, use "gap". "gap" é uma metapropriedade tanto para "GCG" quanto "GRG":*/
+
+    gap: 20px 30px;
+
+    /*Caso "gap" receba somente um valor, esse valor se aplicará tanto para colunas quanto para linhas.*/
+    /*Caso sejam definidos dois valores, o primeiro será aplicado às linhas e o segundo às colunas.*/
+    /*"gap" deve ser definido no container e não nos itens do container.*/
+    /*Caso se deseje realizar os espaçamento entre itens através dos itens, se pode usar "margin" para tanto.*/
+} 
+
+.item {
+    background-color: #048;
+    color: #fff;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px 5px;
+
+    /*Caso sejam definidos dois valores, o primeiro será aplicado às linhas e o segundo às colunas.*/
+    /*Caso sejam usados tanto "margin" quanto "gap", os valores de ambos serão somados aos intens ao serem aplicados.*/
+}
