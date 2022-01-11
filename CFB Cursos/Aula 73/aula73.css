@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+/*"grid-template-area" nos permite criar áreas e atribuir nomes a elas.*/
+
+/*O nome da classe não precisa ser o mesmo nome da área (nome após a propriedade "grid-area").*/
+
+.header {
+    grid-area: header;
+}
+
+.principal {
+    grid-area: principal;
+}
+
+.lateral {
+    grid-area: lateral;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 150px 200px 250px; /*Essas definições afetam as "grid-area's".*/
+    grid-template-rows: 250px 200px 150px 100px;
+    
+    grid-template-areas: 'header header header header' /*O "header" ocupará as 4 primeiras colunas.*/
+                         'principal principal . lateral' /*O ponto foi usado para representar um espaço vazio na grade.*/
+                         'footer footer footer footer' /*Aqui devemos usar o nome da "grid-area" e não o nome da classe.*/
+} 
+
+.item {
+    background-color: #048;
+    color: #fff;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.item_1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item_2 {
+    grid-column: 1 / 3;
+}
+
+.item_3 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.item_4 {
+    grid-row: 4 / 6;
+}
+
+.item_5 {
+    grid-column: 1 / span 2;
+}
+
+.área {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.área_2 {
+    grid-area: 3 / 2 / 5 / 4;
+}
