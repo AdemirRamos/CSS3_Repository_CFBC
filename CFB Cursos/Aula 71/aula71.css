@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    gap: 20px 30px;
+} 
+
+.item {
+    background-color: #048;
+    color: #fff;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*As propriedades a seguir são para itens e não containers e servem para determinar o início e o final do posicionamento dos itens.*/
+/*Através de "grid-column-start/end", determinamos onde um elemento começa e termina (dentro do container).*/
+
+.item_1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+    /*O número indicado para "grid-column-end" será o número posterior à coluna final até a qual o elemento se expandirá.*/
+}
+
+.item_2 {
+    grid-column: 1 / 3;
+    
+    /*A metapropriedade "grid-column" engloba tanto "grid-column-start" quanto "grid-column-end":*/
+    /*O primeiro número representa o início da expansão do elemento (em relação às colunas) e o segundo o fim da expansão + 1.*/
+}
+
+.item_3 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+    /*Essa propriedade funciona de maneira análoga à anterior porém aplicada às linhas.*/
+}
+
+.item_4 {
+    grid-row: 4 / 6;
+}
+
+.item_5 {
+    grid-column: 1 / span 2;
+
+    /*O valor "span" indica para quantos elemento o item que o recebe irá expandir-se.*/
+    /*"span" não funciona com "row".*/
+}
