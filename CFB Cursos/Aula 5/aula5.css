@@ -7,7 +7,7 @@
     
     padding: 50px;
     /*"padding" representa a margem interna do elemento.*/
-    /*Ao definir somente um valor para o "paddin", esse valor será aplicado para todos os lados do "padding".*/
+    /*Ao definir somente um valor para o "padding", esse valor será aplicado para todos os lados do "padding".*/
     /*Lados do "padding": "top", "right", "bottom" e "left".*/
     /*Podemos colocar um valor após o outro para configurar todos os cantos da nossa "caixa" (na ordem de cantos acima).*/
     /*O valor 0(px) não adiciona "padding" algum.*/
@@ -29,7 +29,7 @@
 }
 
 #d2 {
-    background-clip: padding-box; /*"padding-box" desconsidera a borda e inicia o "background" após o término da borda..*/
+    background-clip: padding-box; /*"padding-box" desconsidera a borda e inicia o "background" após o término da borda.*/
 }
 
 #d3 {
