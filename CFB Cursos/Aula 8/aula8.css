@@ -24,6 +24,7 @@
     background-color: #ddd;
 
     /*A seguir, temos a metapropriedade "border":*/
+    
     border: #00f solid 20px;
     /*Aparentemente, não há uma ordem a se seguir para esta metapropriedade.*/
 }
