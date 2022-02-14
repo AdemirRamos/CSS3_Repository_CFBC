@@ -31,6 +31,7 @@ div {
     margin: auto;
     /*O comando acima centraliza o conteúdo.*/
     /*"margin: auto;" só funciona caso a largura ("width") esteja definida.*/
+    
     padding: 5px;
 }
 
@@ -46,6 +47,6 @@ div {
 div > p {
     border: 1px solid #f00;
     text-align: center;
-    /*O parâmetro e valor acima centralizam os textos das "p".*/
+    /*O parâmetro e valor acima centralizam os textos das "tags p".*/
     /*Outros valores para "text-align": "right" e "left".*/
 }
