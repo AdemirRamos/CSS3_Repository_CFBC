@@ -9,7 +9,7 @@
     /*Gradiente é um valor de "background".*/
     /*O "gradiente linear" é um gradiente ou somente na horizontal ou somente na vertical.*/
     /*Primeiro vem o sentido do gradiente (para onde ele aponta), depois vírgula, depois as cores do gradiente (separadas por ",").*/
-    /*Na direção do gradiente, se pode usar os seguintes valores: "top", "right", "botom", "left".*/
+    /*Na direção do gradiente, se pode usar os seguintes valores: "top", "right", "bottom", "left".*/
     /*Caso se deseje um gradiente no sentido diagonal, ao invés de "to + direção", podemos usar um ângulo. - Conferir "dv2".*/
     /*Para que a direção do gradiente seja entendida como um ângulo, é preciso usar a abreviação "deg" (de "degree").*/
     /*Se pode adicionar quantas cores se desejar ao seu gradiente, apenas lembre de as separar com vírgulas.*/
