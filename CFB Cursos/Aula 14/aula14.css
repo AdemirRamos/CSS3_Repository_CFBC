@@ -8,7 +8,7 @@ div#div1 {
     border: 1px solid black;
     margin-top: 15px;
     /*margin: 100px;*/
-    /*Apenas lembrando que: quando só um valor para o parâmetro "margin", esse valor valerá para as quatro margens do objeto.*/
+    /*Apenas lembrando que: quando há só um valor para o parâmetro "margin", esse valor valerá para as quatro margens do objeto.*/
     
     padding: 100px;
     /*A mesma regra, descrita acima, vale para "padding", ou seja, um valor configura todos os cantos (internos) do conteúdo.*/
