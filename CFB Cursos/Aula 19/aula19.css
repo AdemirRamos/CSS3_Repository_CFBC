@@ -25,7 +25,7 @@ a:active { /*Configuração de "links ativos" (sendo clicados).*/
     color: green;
 }
 
-a:hover { /*Configuração de cursos sobre o "link".*/
+a:hover { /*Configuração do cursor sobre o "link".*/
     color: blueviolet;
     background-color: cornsilk;
 }
