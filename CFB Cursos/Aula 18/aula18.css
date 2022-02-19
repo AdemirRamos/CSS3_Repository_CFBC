@@ -13,7 +13,7 @@ p {
     font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
     /*A propriedade aciam diz respeito ao tipo de fonte que será exibida. A ordem de aplicação sempre será da esquerda para a direita.*/
     /*Caso uma fonte não seja encontrada, o navegador partirá para a próxima até achar uma fonte aplicável.*/
-    /*Caso nenhuma das fontes marcadas seja encontrada, será aplicada a fonte padrão encontrado pelo navegador (seja ela qual for).*/
+    /*Caso nenhuma das fontes marcadas seja encontrada, será aplicada a fonte padrão encontrada pelo navegador (seja ela qual for).*/
     /*Se separa os diferentes tipos de fonte com vírgula e, em caso de fontes com nomes compostos, usamos aspas.*/
     /*Nesse caso, palavras compostas são aquelas separadas por espaços. Caso duas palavras sejam ligadas por um hífen, não se usa aspas.*/
 
