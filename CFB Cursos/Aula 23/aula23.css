@@ -14,6 +14,7 @@ ul, ol {
     /*"list-style" é uma metapropriedade.*/
     list-style: decimal-leading-zero outside;
     /*Checar.*/
+    /*Checado. Resultado: o valor acima faz com que os índices da lista sejam números; os números entre 1 e 9 receberão um zero à esquerda.*/
 }
 
 li {
