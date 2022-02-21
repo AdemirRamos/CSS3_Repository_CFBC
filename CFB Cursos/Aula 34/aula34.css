@@ -6,7 +6,7 @@ img {
     border: 3px solid black;
     margin-left: 5px;
 
-    /*A propriedade "float" nos permite indicar se um elemento flutuante ou não.*/
+    /*A propriedade "float" nos permite indicar se um elemento será do tipo flutuante ou não.*/
     /*Além disso, "float" também nos permite indicar como o elemento vai flutuar.*/
 
     /*Caso "zoom" da página diminua demais, as imagens podem entrar para dentro da área onde está o "float".*/
