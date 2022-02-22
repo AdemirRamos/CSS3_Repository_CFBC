@@ -10,7 +10,7 @@ p::before, h1::before {
     text-decoration: underline;
 }
 
-p::after, h1:after {
+p::after, h1::after {
     /*"after" funciona da mesma maneira que "before", porém "after" é usado para configurar o que vier depois do elemento.*/
     content: url('Imagens/Songs\ For\ The\ Deaf\ \(All\ Red\ -\ P\).png') " - CFB - Pseudoclasses";
     color: red;
