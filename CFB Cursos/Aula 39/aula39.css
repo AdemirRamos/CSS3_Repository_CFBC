@@ -24,7 +24,6 @@ p:hover {
     background-color: rgb(189, 11, 11);
     color: #fff;
     font-weight: bolder;
-    
     transform: rotate(360deg);
     /*"transform" também pode ser adicionado à "transition".*/
 }
