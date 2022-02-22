@@ -10,7 +10,7 @@ p {
 
     transition: width 1s, height 1s, background-color 1s, color 1s;
 
-    /*Na metapropriedade "transition", vamos indicar qual elemento receberá a transição e a duração (em segundos) da transição).*/
+    /*Na metapropriedade "transition", vamos indicar qual elemento receberá a transição e a duração (em segundos) da transição.*/
     /*Os diferentes valores devem ser separados por vírgula.*/
     /*A velocidade de transição, para "transition", é "ease" (começa devegar, fica mais rápida e desacelera).*/
     /*Para alterar a velocidade de transição, usamos a propriedade "transition-timing-function":*/
