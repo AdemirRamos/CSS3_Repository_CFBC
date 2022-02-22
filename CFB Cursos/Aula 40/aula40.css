@@ -44,8 +44,9 @@ p {
 
     /*As propriedades abaixo funcionam as propriedades de "transition" - porém aplicadas à "animation".*/
 
-    animation-name: animação_1, animação_2
-    /*Se pode criar quantas animações se desejar. Para colocá-las aqui, basta separá-las por vírgula.*/;
+    animation-name: animação_1, animação_2;
+    /*Se pode criar quantas animações se desejar. Para colocá-las aqui, basta separá-las por vírgula.*/
+    
     animation-duration: 4s, 4s;
     animation-timing-function: ease;
     animation-delay: 1s, 4s /*O segundo valor diz respeito a uma segunda animação (caso ela exista).*/;
