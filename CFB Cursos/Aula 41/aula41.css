@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@charset "UTF-8";
-
 /*A primeira coisa que precisamos criar para se gerar animações é o conjunto de "quadro-chave" ("key-frames").*/
 /*"Key-frame", basicamente, é um quadro-chave que define as propriedades de um momento de uma animação.*/
 
@@ -20,7 +18,8 @@
         font-weight: bolder;
     }
 
-    25% {left: 250px;
+    25% {
+        left: 250px;
         top: 250px;
         background-color: skyblue;
         color: coral;
@@ -85,10 +84,11 @@ p#p1 {
     text-align: justify;
     font-size: 18px;
 
-    /*As propriedades abaixo funcionam as propriedades de "transition" - porém aplicadas à "animation".*/
+    /*As propriedades abaixo funcionam como as propriedades de "transition" - porém aplicadas à "animation".*/
 
-    animation-name: animação
-    /*Se pode criar quantas animações se desejar. Para colocá-las aqui, basta separá-las por vírgula.*/;
+    animation-name: animação;
+    /*Se pode criar quantas animações se desejar. Para colocá-las aqui, basta separá-las por vírgula.*/
+    
     animation-duration: 4s;
     animation-timing-function: ease;
     animation-delay: 1s /*O segundo valor diz respeito a uma segunda animação (caso ela exista).*/;
