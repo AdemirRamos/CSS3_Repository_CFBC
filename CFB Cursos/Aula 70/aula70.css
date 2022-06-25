@@ -38,5 +38,5 @@ body {
     margin: 10px 5px;
 
     /*Caso sejam definidos dois valores, o primeiro será aplicado às linhas e o segundo às colunas.*/
-    /*Caso sejam usados tanto "margin" quanto "gap", os valores de ambos serão somados aos intens ao serem aplicados.*/
+    /*Caso sejam usados tanto "margin" quanto "gap", os valores de ambos serão somados aos itens ao serem aplicados.*/
 }
