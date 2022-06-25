@@ -51,6 +51,6 @@ body {
 .item_5 {
     grid-column: 1 / span 2;
 
-    /*O valor "span" indica para quantos elemento o item que o recebe irá expandir-se.*/
+    /*O valor "span" indica para quantos elementos o item que o recebe irá expandir-se.*/
     /*"span" não funciona com "row".*/
 }
